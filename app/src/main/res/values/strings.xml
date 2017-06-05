@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">操作员客户端</string>
+
+    <string name="hello">操作员</string>
+    <string name="welcome">欢迎进入操作员系统</string>
+    <string name="user_name">用户名:</string>
+    <string name="user_pass">密码：</string>
+    <string name="login_btn">登录</string>
+    <string name="cancel_btn">取消</string>
+    <string name="user_no">用户编号：</string>
+    <string name="welcomeUser">欢迎进入用户界面</string>
+
+    <string name="get_user">查看用户信息</string>
+    <string name="logout">退出登录</string>
+    <string name="nenu_title_text">主菜单页面</string>
+    <string name="get_Machine">机器列表</string>
+    <string name="update_channel">更新货道</string>
+    <string name="title_activity_machine_list">MachineListActivity</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+   <!-- <include layout="@layout/title"/>-->
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/title_padding"
+        android:textSize="@dimen/label_font_size"
+        />
+    <Button
+        android:id="@+id/machine_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_Machine"/>
+    <Button
+        android:id="@+id/update_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_channel"/>
+    <Button
+        android:id="@+id/bnUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_user"/>
+    <Button
+        android:id="@+id/bnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"/>
+</LinearLayout>
