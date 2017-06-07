@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:stretchColumns="1"
+    tools:context="com.operaterapp.UpdateChannelActivity">
+
+    <!--售货机铭牌号-->
+    <TableRow>
+        <TextView
+            android:text="@string/machineName"
+            android:textSize="@dimen/label_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/machine_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </TableRow>
+    <!--货道编号-->
+    <TableRow>
+        <TextView
+            android:text="@string/channelNo"
+            android:textSize="@dimen/label_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/channelNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </TableRow>
+    <!--加货量-->
+    <TableRow>
+        <TextView
+            android:text="@string/stockNumAdd"
+            android:textSize="@dimen/label_font_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/stockNumAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </TableRow>
+    <!--按钮组-->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/addStock"
+            android:text="@string/add_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</TableLayout>

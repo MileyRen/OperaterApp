@@ -16,4 +16,9 @@
     <string name="get_Machine">机器列表</string>
     <string name="update_channel">更新货道</string>
     <string name="title_activity_machine_list">MachineListActivity</string>
+
+    <string name="machineName">售货机铭牌号</string>
+    <string name="channelNo">货道编号</string>
+    <string name="stockNumAdd">加货量</string>
+    <string name="add_stock">加货</string>
 </resources>

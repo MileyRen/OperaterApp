@@ -16,6 +16,7 @@ public class BaseConst {
     public static final String ALL_MACHINES = "ALL_MACHINES";
     public static final String LOGIN_URL =BaseConst.BASE_URL + "/client/clientLogin";
     public static final String GET_MACHINES = BaseConst.BASE_URL + "/client/clientMachine?userId=:userId";
+    public static final String ADD_STOCK_URL = BaseConst.BASE_URL + "/client/clientAddStock";
 
     public static final String SERVER_IP = "49.52.10.237";
     public static final String SERVER_BASE_URL="http://"+BaseConst.SERVER_IP+"/vending";

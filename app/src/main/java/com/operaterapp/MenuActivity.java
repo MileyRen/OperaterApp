@@ -48,6 +48,10 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener {
             case R.id.bnUser:
                 getUser();
                 break;
+            case R.id.update_channel:
+                Intent update = new Intent(this,UpdateChannelActivity.class);
+                startActivity(update);
+                break;
             default:break;
         }
     }
@@ -79,6 +83,5 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener {
         }
         return response;
     }
-
 
 }

@@ -74,6 +74,8 @@ public class MainActivity extends VersionActivity implements View.OnClickListene
         bnCancel.setOnClickListener(this);
         bnCheckVersion.setOnClickListener(this);
         createDB.setOnClickListener(this);
+        Intent versionService = new Intent(this, VersionDbService.class);
+        startService(versionService);
     }
     @Override
     public void onClick(View v) {
