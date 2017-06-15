@@ -12,6 +12,7 @@ import com.operaterapp.util.BaseConst;
 import com.operaterapp.util.HttpURLConnUtil;
 
 import java.net.HttpURLConnection;
+import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -55,18 +56,17 @@ public class UpdateChannelActivity extends AppCompatActivity implements View.OnC
         Map<String,String> map = new HashMap<String,String>();
         map.put("machineName", machine);
         map.put("channelNo",channel);
-        map.put("stockNum",stockNum);
+        map.put("stockNum",String.valueOf(stockNum));
         map.put("userId",String.valueOf(userId));
-        String response = null;
+        String response;
         String url = BaseConst.ADD_STOCK_URL;
         try {
-            response = HttpURLConnUtil.postByResponse(url, map,"utf-8");
-            if(response.equals("success")){
-                Toast.makeText(this,"更新货道成功",Toast.LENGTH_SHORT).show();
-                machine_Name.setText("");
-                channelNo.setText("");
-                stockNumAdd.setText("");
-            }
+             response = HttpURLConnUtil.postByResponse(url, map,"utf-8");
+             response = URLDecoder.decode(response,"utf-8");//解码
+             Toast.makeText(this, response,Toast.LENGTH_SHORT).show();
+             machine_Name.setText("");
+             channelNo.setText("");
+             stockNumAdd.setText("");
         } catch (Exception e) {
             e.printStackTrace();
         }
